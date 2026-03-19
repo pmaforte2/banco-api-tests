@@ -13,9 +13,7 @@ describe('Login', () => {
                 .post('/login')
                 .set('Content-Type', 'application/json')
                 .send(bodyLogin)
-            
-            
-            expect(resposta.status).to.equal(200);
+                        
             expect(resposta.status).to.equal(200);
             expect(resposta.body.token).to.be.a('string');
         })
